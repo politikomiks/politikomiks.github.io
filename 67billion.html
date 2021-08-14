@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<div id="dots" style="width: 100%; word-wrap: break-word; color: black"></div>
+
+		<script>
+			var amount = 67000000000;
+			var dot_value = 50000;
+			var dot = "."
+
+			//var dot = "<img src='square.png'/>";
+			// var amount = 1000;
+			// var dot_value = 1;
+
+			var carriage_return_at = 250;
+
+			//var amount = 1000;
+			//var dot_value = 50;
+
+			var number_of_dots = amount / dot_value;
+
+			var text = ""
+			for (let i = 0; i < number_of_dots; i++) {
+				text += dot;
+				// if((i+1) % carriage_return_at == 0) {
+				// 	text += "<br>";
+				// }
+			}
+			document.getElementById("dots").innerHTML = text;
+		</script>
+
+	</body>
+</html>
